@@ -25,3 +25,15 @@ print(lengthSandwiches)
 
 lengthSandwiches2 = len(sandwiches)
 print(lengthSandwiches2)
+
+# this prints out the following
+# 3
+
+def printList():
+    # 
+    # 
+    #
+    print('printList function')
+
+printList()
+
