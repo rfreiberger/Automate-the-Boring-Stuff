@@ -17,7 +17,7 @@ emailRegex = re.compile(r'''(
         @                                        # @ symbol
         [a-zA-Z0-9.-]+                           # domain name
         (\.[a-zA-Z]{2,4})                        # dot-something
-        )''', re.VERBOSE
+        )''', re.VERBOSE)
 
 text = str(pyperclip.paste())
 matches = []
@@ -41,6 +41,5 @@ else:
 
 
 
-# TODO: Copy results to the clipboard. 
 
 
