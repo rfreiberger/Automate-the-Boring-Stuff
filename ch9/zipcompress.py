@@ -11,3 +11,4 @@ spamInfo.file_size
 spamInfo.compress_size
 print('Compress file is %sx smaller!' % (round(spamInfo.file_size / spamInfo.compress_size, 2)))
 exampleZip.close()
+
