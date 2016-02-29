@@ -30,4 +30,8 @@ countyData[state][county]['tracts'] += 1
 countyData[state][county]['pop'] += int(pop)
 
 # TODO: Open a new text file and write the contents of countyData to it. 
-
+print('Writing results...')
+resultFile = open('census2010.py', 'w')
+resultFile.write('allData = ' + pprint.pformat(countyData))
+resultFile.close()
+print('Done.')
