@@ -1,0 +1,28 @@
+>>> import smtplib
+>>> smtpObj = smtplib.SMTP('smtp.example.com', 587)
+>>> smtpObj.ehlo()
+
+>>> smtpObj.starttls()
+
+>>> smtpObj.login('example@example.com', 'Password')
+
+>>> smtpObj.sendmail('examplesender@example.com', 'Subject: Subject Line.\nHello World!')
+{}
+>>> smtpObj.quit()
+
+### 
+
+import smtplib
+
+from email.mine.text import MIMEText
+
+with open(textfile) as fp:
+	msg = MIMEText(fp.read())
+
+msg['Subject'] = 'The contents of %s' % textfile
+msg['From'] = me
+msg['To'] = you
+
+s = smtplib.SMTP('localhost')
+s.send_message(msg)
+s.quit()
